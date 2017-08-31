@@ -1,0 +1,117 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 04</title>
+    <style type="text/css">
+        .num-queue span{
+            border: 1px solid black;
+            border-radius: 3px;
+            display: inline-block;
+            margin: 4px;
+            padding: 2px;
+            background-color: purple;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type='text' class='num'/>
+    <button class='left-in'>左侧入</button>
+    <button class='right-in'>右侧入</button>
+    <button class='left-out'>左侧出</button>
+    <button class='right-out'>右侧出</button>
+</div>
+<div class='num-queue'>
+</div>
+
+<script>
+    (function(){
+        const inputBox = document.querySelector('.num');
+        const leftIn = document.querySelector('.left-in');
+        const rightIn = document.querySelector('.right-in');
+        const leftOut = document.querySelector('.left-out');
+        const rightOut = document.querySelector('.right-out');
+        // 从右侧添加数字
+        function appendItem(){
+            const numQueue = document.querySelector('.num-queue');
+            const numContainer = document.createElement('span');
+            if(validateInput(inputBox)){
+                numContainer.textContent = inputBox.value;
+                numQueue.appendChild(numContainer);
+            };
+        };
+        // 从左侧添加数字
+        function insertItem(){
+            const numQueue = document.querySelector('.num-queue');
+            const numContainer = document.createElement('span');
+            if(validateInput(inputBox)){
+                numContainer.textContent = inputBox.value;
+                numQueue.insertBefore(numContainer, numQueue.firstChild);
+            };
+        }
+        // 移除数字
+        function removeItem(item){
+            const numQueue = document.querySelector('.num-queue');
+            if(numQueue.firstElementChild){
+                numQueue.removeChild(item);
+                alert(`队列中还剩下${numQueue.children.length}个数字。`);
+            } else {
+                alert(`队列中没有数字, 请添加。`);
+            }
+        }
+        // 检查数字输入合法性
+        function validateInput(input){
+            if(input.value.match(/^\d+$/)){   /*"^\d+"表示以数字开头*/
+                return input.value;
+            } else{
+                input.focus();
+                alert('请输入正确格式(数字)!');
+            }
+        };
+        // 为按钮添加点击事件
+        function clickHandler(btn){
+            btn.addEventListener('click', () => {
+                const numQueue = document.querySelector('.num-queue');
+                switch (btn) {
+                    case rightIn:
+                        appendItem();
+                        inputBox.value = '';
+                        clickNumToRemove();
+                        break;
+                    case leftIn:
+                        numQueue.children[0] ? insertItem() : appendItem();
+                        inputBox.value = '';
+                        clickNumToRemove();
+                        break;
+                    case rightOut:
+                        removeItem(numQueue.lastElementChild);
+                        break;
+                    case leftOut:
+                        removeItem(numQueue.firstElementChild);
+                        break;
+                }
+            })
+        };
+        // 点击队列某个元素以删除该元素
+        function clickNumToRemove(){
+            const nums = document.querySelectorAll('.num-queue span');
+            nums.forEach(num => {
+                num.onclick =function () {
+                    removeItem(this);
+                }
+            });
+        };
+        function init(){
+            clickHandler(rightIn);
+            clickHandler(leftIn);
+            clickHandler(rightOut);
+            clickHandler(leftOut);
+            clickNumToRemove();
+        };
+        init();
+    })();
+</script>
+</body>
+</html>
