@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wrap{
+            width: 600px;
+            height: 600px;
+            border: 2px solid #7a71ff;
+            margin: 0 auto;
+            position: relative;
+        }
+        #y_axis, #x_axis{
+            width: 400px;
+            height: 40px;
+            display: flex;
+            margin: 0 auto;
+        }
+        #y_axis{
+            flex-direction:column;
+            width: 40px;
+            height: 400px;
+            position: absolute;
+            left: 40px;
+        }
+        span{
+            flex: 1;
+            text-align: center;
+            line-height: 40px;
+        }
+        #container{
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #777;
+            margin: 0 auto;
+            position: relative;
+        }
+        .cell{
+            border: 1px solid #777;
+            width: 38px;
+            height: 38px;
+        }
+        #box{
+            position: absolute;
+            top:40px;
+            left: 40px;
+            width: 40px;
+            height: 40px;
+            background-color: #ff2520;
+        }
+        .top{
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            background-color: #0000ff;
+        }
+        .control{
+            width: 400px;
+            height: 400px;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+
+<body>
+<section id="wrap">
+    <div id="x_axis">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+    </div>
+    <div id="y_axis">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+    </div>
+    <!--表格-->
+    <div id="container">
+        <!--移动的小盒子-->
+        <div id="box">
+        <div class="top"></div>
+        </div>
+
+    </div>
+    <!--底部-->
+    <div class="control">
+        <input type="text" id="p_input">
+        <button id="btn">动</button>
+        <p>也可以选择键盘方向键--上下左右</p>
+    </div>
+</section>
+</body>
+</html>
+<script>
+    function $(id){
+        return document.getElementById(id);
+    }
+
+    var conHeight = $("container").clientHeight;//400
+    var a=$("container").offsetTop;
+    console.log($("container").style.width);
+    var boxHeight = $("box").clientHeight;//40
+    var deg = 0;
+    for(var i=1; i<=10; i++){
+        for(var j=1; j<=10; j++){
+            var div  = document.createElement("div");
+            div.className="cell";
+            $("container").appendChild(div);
+        }
+    }
+    $("btn").onclick = function(){
+        switch($("p_input").value){
+            case "GO":
+                GO();
+                break;
+            case "TUN RIG":
+                tunRig();
+                break;
+            case "TUN BAC":
+                tunBac();
+                break;
+            case "TUN LEF":
+                tunLef();
+                break;
+            default:
+                alert("你输入的内容不合理");
+        }
+    }
+    function KeyEvent(e){     //通用的兼容各个浏览器的响应键盘事件函数
+        var e = e || window.event;      //事件处理
+        switch(e.keyCode || e.which || e.charCode){   //按键 ASCII 码值
+            case 37:
+                tunLef();
+                break;
+            case 38:
+                GO();
+                break;
+            case 39:
+                tunRig();
+                break;
+            case 40:
+                tunBac();
+                break;
+        }
+    }
+    function GO(){
+        var offsetTop = $("box").offsetTop;
+        var offsetLeft = $("box").offsetLeft;
+        var rotate = $("box").style.transform;
+        var regex = /\d+/g;
+        if(rotate===""){
+            offsetTop>0?($("box").style.top = offsetTop - boxHeight + "px"):alert("已到最上方！");
+        }else{
+            var deg = regex.exec(rotate)[0];
+            if(deg==0){
+                if(offsetTop>0){
+                    $("box").style.top = offsetTop - boxHeight + "px";
+                }else{
+                    alert("已到最上方！");
+                }
+            }else if(deg==90){
+                if(offsetLeft < conHeight-boxHeight){
+                    $("box").style.left = offsetLeft + boxHeight + "px";
+                }else{
+                    alert("已到最右方！");
+                }
+            }else if(deg==180){
+                if(offsetTop < conHeight-boxHeight){
+                    $("box").style.top = offsetTop + boxHeight + "px";
+                }else{
+                    alert("已到最下方！");
+                }
+            }else if(deg==270){
+                if(offsetLeft > 0){
+                    $("box").style.left = offsetLeft - boxHeight + "px";
+                }else{
+                    alert("已到最左方！");
+                }
+            }
+        }
+    }
+
+    function tunRig(){
+        deg += 90;
+        rotate(deg);
+    }
+
+    function tunBac(){
+        deg += 180;
+        rotate(deg);
+    }
+
+    function tunLef(){
+        deg += 270;
+        rotate(deg);
+    }
+
+    function rotate(deg){
+        deg = deg%360;
+        $("box").style.transform = "rotate("+deg+"deg)";
+    }
+
+
+document.addEventListener('keydown',KeyEvent,false);
+
+</script>

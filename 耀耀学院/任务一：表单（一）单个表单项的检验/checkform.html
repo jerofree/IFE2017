@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 50px 0 0;
+           text-align: center;
+        }
+        p{
+            text-align: center;
+
+        }
+        .success{
+            color: green;
+        }
+        .fail{
+            color: red;
+        }
+      form{
+
+            line-height: 30px;
+        }
+
+       label{
+            font-size: 16px;
+            line-height: 34px;
+           padding-right: 5px;
+        }
+        #input1{
+            width: 240px;
+            height: 30px;
+        }
+        #input2{
+            height: 34px;
+            width: 40px;
+            border: none;
+            background-color: #497cff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <div>
+    <label for="input1">名称</label>
+    <input id="input1" type="text" name="name" >
+    <input id="input2" type="button" value="验证">
+    </div>
+    <p>必填，长度为4-16个字符</p>
+
+</form>
+</body>
+</html>
+<script>
+    var input1=document.getElementById("input1");
+    var input2=document.getElementById("input2");
+    var tip=document.getElementsByTagName("p")[0];
+    input1.focus();
+
+    function validatesum(str) {
+        let sumLen = 0;
+        for (let ch of str) {
+            if (isASCII(ch))
+                sumLen++;
+            else
+                sumLen+=2;
+        }
+        if(sumLen<4||sumLen>6)
+            return false;
+        else return true;
+    }
+
+    function isASCII (c) {
+        return c.codePointAt(0) <= 0xFF;
+    }
+    function display() {
+        var name=input1.value.trim();
+        if(validatesum(name))
+        {
+        tip.innerHTML="验证通过";
+        tip.className="success";
+        }
+        else{
+            tip.innerHTML="请注意字符长度";
+            tip.className="fail";
+        }
+    }
+    input2.addEventListener('click',()=>display());
+
+
+
+</script>

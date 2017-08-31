@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        form{
+            width: 600px;
+            height: 600px;
+            margin: 400px auto;
+        }
+        .dyform{
+
+            text-align: center;
+        }
+        .male{
+            padding-right:30px;
+        }
+        .show{
+            text-align: center;
+            margin-top: 80px;
+
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<form>
+    <div class="dyform">
+    <label for="inschool" class="s1">
+        <input type="radio" name="in" id="inschool" />
+        在校生</label>
+
+    <label for="outschool" class="s2">
+        <input type="radio" name="in" id="outschool" />
+        非在校生</label>
+    </div>
+     <div class="show">
+    <select name="city" id="city">
+            <option value="0">上海</option>
+            <option value="1">北京</option>
+            <option value="2">南京</option>
+        </select>
+        <select name="school" id="school">
+            <option value="0">上海交通大学</option>
+            <option value="1">复旦大学</option>
+            <option value="2">上海科技大学</option>
+        </select>
+     </div>
+    <div class="show work hide">
+        <label for="inschool" class="male">
+            就业单位
+            <input type="text" name="workplace" id="workplace" />
+            </label>
+    </div>
+</form>
+</body>
+</html>
+<script>
+
+    const dyform = document.querySelectorAll('.dyform input');
+    const student = document.querySelector('.show');
+    const work = document.querySelector('.work');
+    const city = document.querySelector('#city');
+    const school = document.querySelector('#school');
+    const university = [
+        ['上海交通大学', '复旦大学','上海科技大学'],
+        ['清华大学', '北京大学','中国石油大学'],
+        ['南京大学'],
+    ];
+    dyform.forEach((input, index) => {
+        input.addEventListener('click', ()=>{
+            if (index === 0) {
+                student.classList.remove('hide');
+                work.classList.add('hide');
+            } else {
+                work.classList.remove('hide');
+                student.classList.add('hide');
+            }
+        }, false);
+    });
+    city.addEventListener('change', ()=>{
+        school.innerHTML = '';
+        var html = '';
+        var index = parseInt(city.value);
+
+        for (let i = 0; i < university[index].length; i++) {
+
+            let optionItem = document.createElement('option');
+            optionItem.innerHTML=university[index][i];
+            school.appendChild(optionItem);
+        }
+
+    }, false);
+</script>
