@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function Observer(data) {
+        this.data = data;
+        this.walk(data);
+        this.eventsBus = new Event();
+    }
+
+    let property = Observer.prototype;
+
+    property.walk = function(obj) {
+        for(let key in obj) {
+            if(obj.hasOwnProperty(key)) {
+                let val = obj[key];
+
+                if(typeof val === 'object') {
+                    new Observer(val);
+                }
+
+                this.convert(key, val);
+            }
+        }
+    };
+    /*每个对象属性都绑定get和set方法*/
+    property.convert = function(key, val) {
+
+        let that=this;
+        Object.defineProperty(this.data, key, {
+            enumerable: true,
+            configurable: true,
+            get: function() {
+                console.log("你访问了 " + key);
+                return val;
+            },
+            set: function(newVal) {
+                if (typeof newVal === "object") {
+                    new Observer(newVal, key);
+                    console.log("你设置了 " + key + "，新的值为" + newVal);
+
+                }
+                if(val != newVal) {
+                    that.eventsBus.emit(key, val, newVal);
+                    val = newVal;
+                }
+
+            }
+        })
+    };
+    //实现一个事件
+    function Event(){
+        this.events = {};
+    }
+
+    Event.prototype.on = function(attr, callback){
+        if(this.events[attr]){
+            this.events[attr].push(callback);
+        }else{
+            this.events[attr] = [callback];
+        }
+    }
+
+    Event.prototype.off = function(attr){
+        for(let key in this.events){
+            if(this.events.hasOwnProperty(key) && key === attr){
+                delete this.events[key];
+            }
+        }
+    }
+
+    Event.prototype.emit = function(attr, ...arg){
+        this.events[attr] && this.events[attr].forEach(function(item){
+            item(...arg);
+        })
+    }
+
+    Observer.prototype.$watch = function(attr, callback){
+        this.eventsBus.on(attr, callback);
+    }
+
+    let app = new Observer({
+        name: 'youngwind',
+        age: 25,
+        book:{
+            id:23,
+            num:100
+        }
+    });
+   /* app.$watch('age', function(oldVal, newVal){
+        console.log(`我的年龄变了，原来是: ${oldVal}岁，现在是：${newVal}岁了`)
+    })
+
+    app.$watch('age', function(oldVal, newVal){
+        console.log(`我的年龄真的变了诶，竟然年轻了${oldVal - newVal}岁`)
+    })*/
+
+    app.data.age = {a1:20,a2:21};
+</script>

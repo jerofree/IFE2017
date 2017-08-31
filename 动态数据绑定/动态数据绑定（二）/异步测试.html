@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function f1(callback){
+        setTimeout(function () {
+            // f1的任务代码
+            console.log("我是f1");
+        }, 3000);
+        callback();
+
+    }
+    function f2() {
+        console.log("我是f2");
+    }
+f1(f2);
+</script>

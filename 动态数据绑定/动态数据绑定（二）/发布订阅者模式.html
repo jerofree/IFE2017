@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+//    var salesOffice={};
+//    salesOffice.clientList=[];
+//    salesOffice.listen=function (fn) {
+//        this.clientList.push(fn);
+//    }
+//    salesOffice.trigger=function () {
+//        for(var i=0,fn;fn=this.clientList[i++];){
+//            fn.apply(this,arguments);
+//        }
+//    }
+//    salesOffice.listen(function (price,squreMeter) {
+//        console.log('价格='+price);
+//        console.log('squareMeter'+squreMeter);
+//    })
+    var event={
+        clientList:[],
+        listen:function(key,fn){
+            if(!this.clientList[key]){
+                this.clientList[key]=[];
+            }
+            this.clientList[key].push(fn);
+        },
+        trigger:function () {
+            console.log(arguments);
+            var key=Array.prototype.shift.call(arguments);
+            console.log(arguments);
+            fns=this.clientList[key];
+            if(!fns||fns.length===0)
+            {
+                return false;
+            }
+            for(var i=0,fn;fn=fns[i++];)
+            {
+                fn.apply(this,arguments);
+                console.log(arguments);
+            }
+        }
+    };
+    var installEvent=function (obj) {
+        for(var i in event)
+        {
+            obj[i]=event[i];//属性和名字都拷贝了
+
+        }
+     // console.log('squareMeter'+squreMeter);
+
+
+
+}
+var salesOffices={};
+installEvent(salesOffices);
+salesOffices.listen("squareMeter88",function(price,squreMeter) {
+    console.log('价格='+price);
+});
+
+salesOffices.trigger("squareMeter88",2000000);
+
+</script>
