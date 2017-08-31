@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.w{
+    width: 1280px;
+    margin: 0 auto;
+
+}
+header{
+
+    height: 56px;
+    line-height: 56px;
+    background-color: #fff;
+    font-size:0;
+}
+header .img1{
+    margin:12px 12px 12px 60px;
+}
+header .hl{
+    display: inline-block;
+    vertical-align: top;
+    color: #393a3a;
+    font-size: 21px;
+    font-family: "黑体";
+    text-align: center;
+    margin-top:0;
+    line-height: 56px;
+}
+header ul{
+    font-size: 14px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Microsoft YaHei";
+    float: right;
+}
+header .hr{
+    display: inline-block;
+    margin-right: 48px;
+}
+header .first{
+    width: 65px;
+    margin-right: 39px;
+    text-align: center;
+    border-bottom:5px solid red;
+}
+header .last{
+    margin-right: 66px;
+    position: relative;
+    width: 65px;
+    text-align: center;
+    color: red;
+}
+header ul .img2{
+    position: absolute;
+    left: 0;
+    top:18px;
+}
+.topBan{
+    position: relative;
+}
+.ban{
+    display: block;
+}
+.time_new{
+    position: absolute;
+    top:225px;
+    left: 115px;
+    font-size: 60px;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+}
+.charac{
+    position: absolute;
+    font-size: 21px;
+    font-family: "Microsoft YaHei";
+    top: 310px;
+    left: 120px;
+    color: #fff;
+}
+.topBan .btn{
+    position: absolute;
+    left:115px;
+    bottom: 200px;
+    width: 335px;
+    height: 68px;
+    background:#e74f4d;
+    border-style: none;
+    color: #fff;
+    font-size: 21px;
+}
+.four{
+    font-size: 0;
+}
+
+.fir,.sec,.thi,.fou{
+    width: 25%;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.four p{
+    position: absolute;
+    font-size: 14px;
+    width: 160px;
+    left: 90px;
+    top:132px;
+    text-align: center;
+    padding-right:68px ;
+    border-right:2px solid #ccc;
+}
+.four img{
+    position:absolute;
+    top: 70px;
+    left: 145px;
+}
+.fou p{
+    border-right: none;
+}
+.about{
+    width: 100%;
+    height: 360px;
+    position: relative;
+    background-color: #edecec;
+}
+.about img{
+    position: absolute;
+    top:92px;
+    left: 50%;
+
+}
+.about p{
+    font-size: 54px;
+    font-family: "SimHei";
+    position: absolute;
+    bottom: 80px;
+    left: 215px;
+    color: #a1a1a1;
+}
+.map{
+    position: relative;
+}
+.map .text{
+position: absolute;
+    top:50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 21px;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+    text-align: center;
+}
+.map .line{
+    width: 30px;
+    height: 3px;
+    background: #eee;
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top:86px;
+}
+.map .smalltxt{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top:100px;
+    color: #eee;
+}
+.city-ul {
+    text-align: center;
+    position: absolute;
+    bottom: 135px;
+    left: 115px;
+}
+.city-ul span.select {
+    position: relative;
+    display: inline-block;
+    width: 235px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+.span-style {
+    background: #fff url(images/down.png) no-repeat 210px 10px;
+    text-align: left;
+    padding-left: 15px;
+    margin-right: 30px;
+}
+.city-ul span:nth-child(4) {
+    background-color: #be4e48;
+    color: #fff;
+}
+.city-ul span ul{
+    position: absolute;
+    left: 0px;
+    list-style: none;
+    background-color: #e3e3e4;
+    width: 248px;
+    border: 1px solid  #be4e48 ;
+    border-top: none;
+}
+.city-ul span ul li{
+    padding-left: 45px;
+    height: 35px;
+    line-height: 35px;
+}
+.city-ul span ul li:hover{
+    background: #be4e48  url("images/selected.png") no-repeat 13px 13px;
+
+    color: #fff;
+}
+.sh-activity{
+    text-align: center;
+    padding-top: 115px;
+}
+.sh-activity img{
+    vertical-align: top;
+}
+.p-warp{
+    width: 990px;
+    margin: 0 auto;
+}
+.posit{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    font-size: 16px;
+    position: relative;
+}
+.posit h5{color: #524c4a;}
+.posit p{color:#7f7773;}
+.p-one{
+    right: 135px;
+    bottom: 62px;
+}
+.font-set h5{
+    font-size: 16px;
+}
+.font-set p{
+    font-size: 14px;
+}
+.p-two{
+    bottom: 400px;
+    right: 116px;
+}
+.p-two h5{
+    font-size: 24px;
+    letter-spacing: 30px;
+    margin-left: 10px;
+}
+.p-two p{
+    margin-right: 10px;
+}
+.p-three{
+    bottom: 60px;
+    left: -124px;
+}
+.p-four{
+    left: 378px;
+    bottom: 105px;
+}
+.new-world{
+    position: relative;
+}
+.new-world .left{
+    position: relative;
+    width: 850px;
+    height: 570px;
+    background: url("images/newworld.png");
+    background-size: cover;
+}
+.new-world h1{
+    position: absolute;
+    top: 133px;
+    color:#fff;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.new-world h5{
+    position: absolute;
+    color: #fff;
+    font-size: 150px;
+    top: 190px;
+    left: 240px;
+    font-family: "Microsoft YaHei";
+}
+.new-world h3{
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 150px;
+    font-size: 30px;
+}
+.new-world p{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    font-size: 28px;
+    transform: translate(-50%, 0);
+    bottom: 110px;
+}
+.new-world .right{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 430px;
+    height: 570px;
+    background-color: #fff;
+}
+    .right h1{
+    color: #323333;
+    }
+    .right h1 span{
+    color: #e74f4d;
+    }
+    .new-world  .right p{
+    position: absolute;
+    font-size: 12px;
+    font-family: "SimSun";
+    line-height: 2.5;
+    top: 185px;
+    color: #b0b0b0;
+    }
+    .right button{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top:400px;
+        width: 105px;
+        height: 35px;
+        color: #eea9ab;
+        border: 2px solid #eea9ab;
+        background-color: #fff;
+    }
+    .circle{
+        width: 100%;
+        height: 110px;
+        position: absolute;
+        bottom: 0;
+
+    }
+    .right .round{
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 5px;
+        top: 0;
+        left: 40%;
+        transform: translate(-50%, 0);
+        border: 1px solid #919292;
+
+    }
+  .right  .round1{
+        background-color: #919292!important;
+    }
+    .three-wide{
+        overflow: hidden;
+    }
+    .about-life{
+        width: 33.3%;
+        height: 520px;
+        float: left;
+        background: #fff;
+        text-align: center;
+        position: relative;
+    }
+    .red{
+        background:#e74f4d;
+    }
+    .red p:nth-child(1){
+        margin-top: 175px;
+    }
+    .white p:nth-child(1){
+        margin-top: 175px;
+    }
+    .red p{
+        color:#fff;
+        font-size: 24px;
+    }
+    .white p{
+        color: #000;
+        font-size: 24px;
+    }
+    .about-life .line{
+        width:31px;
+        height: 3px;
+        background: #fff;
+        position: relative;
+        left: 50%;
+        top:10px;
+        margin:10px 0;
+        transform: translate(-50%, 0);
+    }
+    .white .line{
+        background-color: #ababab;
+    }
+    .about-life .readmore{
+        width: 168px;
+        height: 40px;
+        border: 2px solid #f2afaf;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        line-height: 40px;
+        font-size: 21px;
+        font-family: "SimHei";
+        color: #e74f4d;
+        margin-top: 25px;
+    }
+    .red .readmore{
+        color: #fff;
+        border:2px solid #fff;
+    }
+    .train .triangle{
+        position: absolute;
+        left: 0;
+        top:50%;
+        margin-top: -25px;
+        border: 25px solid;
+        border-color: transparent transparent transparent white;
+    }
+    .volunteer{
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 105px;
+    }
+    .volunteer .line{
+        position: relative;
+        width:31px;
+        height: 3px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: #ea6563;
+        margin: 10px 0;
+    }
+    .volunteer p{
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        line-height: 1.5;
+    }
+    .protocol{
+        margin-bottom: 170px;
+    }
+    .protocol .items{
+        display: inline-block;
+        width: 30%;
+        height: 285px;
+        vertical-align: top;
+        padding-left: 100px;
+    }
+    .protocol .tables{
+        display: inline-block;
+        width: 45%;
+        margin:0 100px;
+        height: 285px;
+
+    }
+    .protocol .bigtext{
+         margin-bottom: 25px;
+        font-size: 16px;
+        font-family: "SimHei";
+        color: #000;
+    }
+    .protocol .small{
+        font-size: 14px;
+        color: #6b6d6d;
+        line-height: 20px;
+    }
+    .protocol .more{
+        text-align: right;
+        font-size: 14px;
+        color: #6b6d6d;
+        line-height: 20px;
+    }
+    .protocol .more img{
+        font-weight: 800;
+    }
+    .tables .name,.age,.contact,.address{
+        width: 250px;
+        height: 40px;
+        background-color:#dfdede;
+        display: inline-block;
+        margin-bottom: 16px;
+        padding-left: 5px;
+    }
+    .tables .age,.address{
+        float: right;
+    }
+    .tables .yourdream{
+        width:calc(100%- 5px);
+        height: 120px;
+        background-color:#dfdede;
+        margin-bottom: 16px;
+        padding-left: 5px;
+
+    }
+    .tables .submit{
+        width: 100%;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        background-color:#dfdede;
+    }
+    .contact-us{
+        width: 100%;
+        height: 360px;
+        background: #32353e;
+        overflow: hidden;
+    }
+    .contact-us .con,.email{
+        text-align: center;
+        color: #fff;
+
+    }
+    .contact-us .con{
+        font-size: 21px;
+        font-family: "SimHei";
+        margin-bottom: 5px;
+        margin-top: 90px;
+
+    }
+    .contact-us .email{
+        font-size: 12px;
+        font-family: "SimSun";
+        line-height: 1.5;
+        margin-bottom: 30px;
+
+    }
+    .contact-us form {
+        display: flex;
+        justify-content: center;
+    }
+    .contact-us .in_email{
+        width: 430px;
+        padding: 12px;
+        border: none;
+    }
+    .contact-us .in-submit{
+        width: 80px;
+        padding: 12px;
+        text-align: center;
+        border: none;
+        background: #6f7178;
+        color: #eeeeee;
+    }
+  .contact-us  ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+   .contact-us ul li {
+        padding-right:30px;
+        list-style: none;
+    }
+    footer{
+        height: 60px;
+        width: 100%;
+        background-color: #2f2f38;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    footer span{
+        color: #fff;
+        margin: 30px 0 15px 55px;
+    }
+    footer a{
+        text-decoration: none;
+        color: #fff;
+        margin: 30px 40px 15px 0;
+    }
+
+
+
+
+
+

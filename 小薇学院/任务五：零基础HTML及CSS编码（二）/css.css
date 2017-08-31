@@ -1,0 +1,181 @@
+  * {
+    margin: 0;
+    padding: 0;
+    }
+    body {
+    background: #ddd;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7em;
+    }
+    /*段落外边距*/
+    h2, h3, .author, p, ul, ol {
+    margin: 10px 0;
+    }
+
+
+    /*头部*/
+    header {
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    }
+    header a.img {
+    padding: 10px 0;
+    }
+    nav ul {
+    display: flex;
+}
+    nav ul li {
+    margin-left: 25px;
+    }
+    nav ul li a {
+    font-size: 90%;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover {
+    color: #aaa;
+}
+
+
+    /*主体部分*/
+    #container {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding: 0 10px;
+    }
+    section#main{
+    flex: 20 0 350px;
+    }
+    aside {
+    /**
+     *剩余宽度分配设置为20倍,这样整屏时会稍稍加宽，
+     *随着视口变小，会慢慢变小趋近300px，越过300时换行
+     */
+    flex: 1 0 300px;
+    }
+
+    article, section#img, aside{
+    background: #fff;
+    margin: 20px 10px;   /*容器左右内边距为10，加上这里左右10外边距*/
+    padding: 25px 20px;
+    box-shadow: 2px 2px 2px #888;
+    }
+
+    /*段落缩进*/
+    article p {
+    text-indent: 2em;
+    }
+    /*列表缩进*/
+    article ul, article ol{
+    padding: 0 0 0 40px;
+    }
+    /*三行标题的字体大小和颜色*/
+    article h2 {
+    font-size: 135%;
+    }
+    article h3 {
+    font-size: 105%;
+    color: #666;
+    }
+    .author {
+    font-size: 90%;
+    color: #666;
+    text-indent: 0;
+    }
+    /*小图片框*/
+    section#img {
+    overflow: hidden;
+    }
+    section#img figure {
+    width: 150px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: 25px;
+    font-size: 90%;
+    padding: 5px 15px;
+    float: left;
+    }
+    section#img figure img {
+    width: 100%;
+    }
+    /*列表*/
+    article table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 90%;
+    }
+    article table th, td {
+    border: 1px solid #ddd;
+    padding: 2px 5px;
+    }
+    article table th {
+    text-align: left;
+    background: #000;
+    color: #fff;
+    font-size: 105%;  /*90%的105%*/
+    }
+    article table tr:last-child {     /*这个tr是某个元素的小儿子*/
+    background: #ddd;
+    font-size: 105%;
+    font-weight: bold;
+    }
+    /*边栏*/
+    aside h3 {
+    font-size: 110%;
+    border-left: 4px solid #ddd;
+    padding: 10px;
+    }
+    aside div.form-table {
+    display: table;
+    width: 100%;
+    }
+    aside form .tableRow {
+    display: table-row;
+    }
+    .tableRow > p, .tableRow > label {
+    display: table-cell;
+    padding: 3px 5px;
+    font-size: 90%;
+    }
+    aside .tableRow > label:first-child {
+    text-align: right;
+    vertical-align: top;
+    }
+    aside input {
+    font-size: 90%;
+    padding: 2px;
+    }
+        aside .tips {
+    padding: 0 0 15px 7px;
+    font-size: 80%;
+    color: #555;
+    }
+    aside textarea {
+    width: 90%;
+    height: 100px;
+    }
+    aside input.submit {
+    width: 100%;
+    background: #0033dd;
+    padding: 10px 0;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 110%;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+
+    /*脚部*/
+    footer {
+    background: #333;
+    font-size: 80%;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0 25px 0;
+    }

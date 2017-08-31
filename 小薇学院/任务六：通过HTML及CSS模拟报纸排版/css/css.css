@@ -1,0 +1,407 @@
+
+    *{
+    margin: 0;
+    padding: 0;
+    }
+
+    .container{
+    width: 892px;
+    background-color:#ffffff;
+    margin: 0 auto;
+    padding: 0 44px;
+    }
+    header{
+        border-bottom:2px solid #938e8c;
+        position: relative;
+    }
+    .redblock {
+    background-color: rgb(212, 93, 92);
+    position: relative;
+    left: 45px;
+    top: 0px;
+    width: 110px;
+    height: 61px;
+    }
+    .ife_baidu_com {
+    font-size: 12px;
+    font-family: "SimHei";
+    color: rgb(255, 255, 255);
+    line-height: 1.167;
+    position: absolute;
+    left: 5.563px;
+    top: 46.029px;
+    z-index: 47;
+    }
+    ._2016_03 {
+    font-size: 12px;
+    font-family: "SimHei";
+    color: rgb(212, 93, 92);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    }
+    section{
+    position: relative;
+    margin-top: 34px;
+    }
+    .pic_top{
+    background: url("../images/pic_top.png") no-repeat;
+    width: 641px;
+    height: 301px;
+    position: relative;
+    }
+    .pic_top .left{
+        opacity: 0.502;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 191px;
+        height: 301px;
+        background-color: #3e5642;
+    }
+    .pic_top .right{
+        opacity: 0.502;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 191px;
+        height: 301px;
+        background-color:#deb3b2;
+    }
+    section .pic_right{
+        width: 203px;
+        height:2px;
+        background-color:#cc8091;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .pic_right .about{
+        font-size:24px;
+        font-family:"Microsoft YaHei";
+        color:#000000;
+        text-decoration:underline;
+        margin:5px 0 0 0;
+        /*首字母放大显示*/
+        font-variant: small-caps;    /*显示小型大写字母的字体*/
+        text-transform: capitalize;  /*文本中的每个单词以大写字母开头*/
+    }
+    .pic_right .below{
+        font-size: 12px;
+        color: #676767;
+        font-family:"KaiTi";
+        line-height: 10px;
+    }
+    ._700{
+        font-size: 116px;
+        color: #75b86b;
+        font-family: "Microsoft YaHei";
+        font-style: italic;
+        margin-left: -15px;
+    }
+    ._32{
+        font-size: 55px;
+        color: #cc8091;
+        font-family: "Microsoft YaHei";
+        float: left;
+    }
+    ._css{
+        margin-top: 20px;
+    }
+    .css_{
+        font-size: 21px;
+        color: #cc8091;
+        font-family: 微软雅黑;
+    }
+    .ccc{
+        font-size: 12px;
+        color: #cc8091;
+        font-family: 微软雅黑;
+        margin-top: -3.5px;
+    }
+    article{
+        margin-top: 42px;
+    }
+
+    article .what{
+        display: inline-block;
+        width: 210px;
+        height: 170px;
+        margin-right: 30px;
+
+    }
+    ._what{
+        font-size: 16px;
+        font-family: "Microsoft YaHei";
+        text-decoration: underline;
+        color: #418c59;
+        font-weight: bold;
+        line-height: 16px;
+    }
+    .frontend{
+        margin-top: 10px;
+        color: #231815;
+        font-family: 微软雅黑;
+        line-height: 16px;
+        opacity: 0.7;
+    }
+    .when{
+        display: inline-block;
+        width: 180px;
+        height: 170px;
+        margin-right: 30px;
+
+    }
+    ._when{
+        font-size: 16px;
+        color: #d2994f;
+        font-family: "Microsoft YaHei";
+        text-decoration: underline;
+        font-weight: bold;
+        line-height: 16px;
+    }
+    .how{
+        width: 150px;
+        display: inline-block;
+        height: 170px;
+
+    }
+    .how .frontend{
+        line-height: 16px;
+
+    }
+    ._how{
+        font-size: 16px;
+        color: #cc7680;
+        font-family: "Microsoft YaHei";
+        text-decoration: underline;
+        font-weight: bold;
+        line-height: 16px;
+    }
+
+    .www{
+        font-size: 12px;
+        font-family: 微软雅黑;
+        line-height: 16px;
+        opacity: 0.7;
+    }
+    .www span{
+        color: #cd4a48;
+    }
+    .bottom{
+        margin-top: 73px;
+        position: relative;
+    }
+    .bottom .left,.right{
+        display: inline-block;
+    }
+    .bottom .left{
+    width: 416px;
+    margin-right: 22px;
+    }
+
+    .left ._the{
+        font-size: 72px;
+        color: #f5e327;
+        font-family: 黑体;
+        font-weight: bold;
+        font-style: italic;
+        margin-right: 20px;
+
+    }
+    .tech{
+        font-size: 42px;
+        color: #11456b;
+        font-family: 黑体;
+        font-weight: bold;
+        line-height: 16px;
+    }
+    .field{
+        font-size: 33px;
+        font-family: 黑体;
+        color: #11456b;
+        font-weight: bold;
+        margin-top: 16px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #11456b;
+    }
+    article .front{
+        font-size: 70px;
+        color: #f5e327;
+        font-family: 微软雅黑;
+        margin: 15px 15px 15px 0;
+        float: left;
+
+    }
+    article p{
+        font-size: 12px;
+        color: #767777;
+        font-family: 宋体;
+    }
+    article .blank{
+        text-indent: 2em;
+    }
+    .desktop{
+        margin: 23px 15px 23px 23px;
+        float: right;
+    }
+    .bottom .right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 458px;
+
+    }
+    .right ._img{
+        width: 458px;
+        height: 275px;
+        position: relative;
+    }
+    .right img{
+        position: relative;
+        vertical-align: top;
+        width: 458px;
+        height: 275px;
+    }
+    .right .bg_color{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color:#353434;
+        opacity: 0.4;
+        width: 458px;
+        height: 60px;
+
+    }
+    .bg_color .bl{
+        position: relative;
+        height: 44px;
+        margin: 8px 0 8px 30px;
+        border-left: 3px solid #72b16a;
+
+    }
+    .bl .big{
+        line-height: 44px;
+        position: relative;
+        color: #ffffff;
+        font-size: 26px;
+        font-family: 微软雅黑;
+        padding-left: 10px;
+    }
+    .bl .italic{
+        font-size: 12px;
+        color: #72b16a;
+        font-family: 微软雅黑;
+        font-style: italic;
+        letter-spacing:2px;
+
+    }
+    .qblue{
+        background-color:#eeedd6;
+        width: 458px;
+        height: 318px;
+        margin-top: 40px;
+        position: relative;
+    }
+    .qblue .character{
+        height: 160px;
+        margin: 32px 15px 30px 44px;
+        padding-top: 32px;
+
+    }
+    .character p{
+        margin-bottom: 20px;
+    }
+    .red0{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 260px;
+        height: 160px;
+        background-color:#d45d5c;
+
+    }
+    .float0{
+        float: left;
+    }
+    .zero{
+        font-size: 110px;
+        font-family: "Microsoft YaHei";
+        color: #fff;
+        margin-left:15px;
+    }
+    .whiteline{
+        display: inline-block;
+        width: 2px;
+        height: 86px;
+        background-color: #fff;
+
+    }
+    ._one{
+        margin: 35px 0 0 90px;
+        font-size: 21px;
+        font-family: SimHei;
+        color: #ffffff;
+        font-style: italic;
+    }
+    .onet{
+        margin-top: 5px;
+    }
+    .small{
+        color: #fff;
+        margin-left: 90px;
+        font-size: 12px;
+        font-family: SimHei;
+
+    }
+    .bottomright{
+        width: 165px;
+        height: 115px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0 20px 30px 13px;
+
+    }
+    .sitetop,.sitebottom{
+        font-size: 72px;
+        font-family: "SimHei";
+        color: #d45d5c;
+
+    }
+    .sitetop{
+        float: left;
+        margin: -11px -1px 1px -26px;
+        height: 30px;
+    }
+    .sitebottom{
+        float: right;
+    }
+    footer{
+        width: 892px;
+        height: 1px;
+        background-color: #938e8c;
+        margin-top: 45px;
+
+    }
+    ._footer{
+        float: right;
+        color: #d45d5c;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
