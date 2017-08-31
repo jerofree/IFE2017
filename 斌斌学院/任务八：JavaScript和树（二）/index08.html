@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .search,#btn,.tree {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .node {
+            display: flex;
+            margin: 10px;
+            border-style:solid;
+            min-height: 30px;
+            min-width: 20px;
+            background-color: white;
+        }
+        #btn button{
+            margin-right: 20px;
+        }
+        #depth {
+            border: 1px solid #0b8bd4;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="tree">
+    <div class="node" id="1">1
+        <div class="node" id="2">2
+            <div class="node" id="5">5
+                <div class="node" id="11">11</div>
+                <div class="node" id="12">12</div>
+                <div class="node" id="13">13</div>
+            </div>
+            <div class="node" id="6">6
+                <div class="node" id="14">14</div>
+                <div class="node" id="15">15</div>
+                <div class="node" id="16">16</div>
+            </div>
+        </div>
+        <div class="node" id="3">3
+            <div class="node" id="7">7
+                <div class="node" id="17">17</div>
+                <div class="node" id="18">18</div>
+                <div class="node" id="19">19</div>
+            </div>
+            <div class="node" id="8">8
+                <div class="node" id="20">20</div>
+                <div class="node" id="21">21</div>
+                <div class="node" id="22">22</div>
+            </div>
+        </div>
+        <div class="node" id="4">4
+            <div class="node" id="9">9
+                <div class="node" id="23">23</div>
+                <div class="node" id="24">24</div>
+                <div class="node" id="25">25</div>
+            </div>
+            <div class="node" id="10">10
+                <div class="node" id="26">26</div>
+                <div class="node" id="27">27</div>
+                <div class="node" id="28">28</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="btn">
+    <div id="depth">深度优先遍历
+    <button id="pre">先根次序遍历</button>
+    <button id="in">中根次序遍历</button>
+    </div>
+    <button id="width">广度优先遍历</button>
+</div>
+<div class="search">
+    <input type="text">
+    <button id="wid_search">广度查询</button>
+</div>
+</body>
+</html>
+<script>
+    var root=document.getElementById("1");
+    var ren_arr=[];
+    var wid_arr=[];
+    var pre=document.getElementById("pre");
+    var _in=document.getElementById("in");
+    var width=document.getElementById("width");
+    var inp=document.getElementsByTagName("input")[0];
+    var btn=document.getElementById("wid_search");
+
+    //先根次序遍历
+    function preOrderTraverse(node){
+        if(node !=null){
+            ren_arr.push(node);
+            preOrderTraverse(node.firstElementChild);
+            preOrderTraverse(node.nextElementSibling);
+        }
+    }
+    //中根次序遍历
+    function inOrderTraverse(node){
+        if(node != null){
+            inOrderTraverse(node.firstElementChild);
+            ren_arr.push(node);
+            inOrderTraverse(node.nextElementSibling);
+        }
+    }
+    function width_visit(node) {
+        let current=0;
+        if(node)
+        {
+            ren_arr.push(node);
+        }
+        while(ren_arr.length)
+        {
+            current=ren_arr.shift();
+            wid_arr.push(current);
+            current=current.firstElementChild;
+            while(current)
+            {
+                ren_arr.push(current);
+                current=current.nextElementSibling;
+            }
+
+        }
+
+    }
+
+
+
+    function render() {
+        let timer = null;
+        let i = 0;
+        ren_arr[0].style.backgroundColor = "blue";
+        console.log(ren_arr.length);
+        timer = setInterval(function () {
+            if (ren_arr.length - 1 == i) {
+                console.log("woshi" + i);
+                ren_arr[i].style.backgroundColor = "#fff";
+                clearInterval(timer);
+                return;
+            }
+            i++;
+            console.log(i);
+
+            ren_arr[i].style.backgroundColor = "blue";
+            ren_arr[i - 1].style.backgroundColor = "#fff";
+
+        }, 1000);
+
+    }
+
+    function render1() {
+        let timer = null;
+        let i = 0;
+        wid_arr[0].style.backgroundColor = "blue";
+        console.log(wid_arr.length);
+        timer = setInterval(function () {
+            if (wid_arr.length - 1 == i) {
+                console.log("woshi" + i);
+                wid_arr[i].style.backgroundColor = "#fff";
+                clearInterval(timer);
+                return;
+            }
+            i++;
+            console.log(i);
+
+            wid_arr[i].style.backgroundColor = "blue";
+            wid_arr[i - 1].style.backgroundColor = "#fff";
+
+        }, 1000);
+    }
+
+    function render_search() {
+        let timer = null;
+        let i = 0;
+        let t=0;
+        wid_arr[0].style.backgroundColor = "blue";
+        t=wid_arr.length;
+        console.log(t);
+        timer = setInterval(function () {
+
+            if(t-1==i){
+                wid_arr[i].style.backgroundColor = "#fff";
+            }
+
+           if (wid_arr[i].firstChild.nodeValue==inp.value) {
+                wid_arr[i].style.backgroundColor="#a396ff";
+
+               // console.log("woshi" + i);
+             //   wid_arr[i].style.backgroundColor = "#fff";
+                clearInterval(timer);
+                return;
+            }
+            i++;
+            if(i>=t){
+                clearInterval(timer);
+                alert("未找到");
+                return;
+            }
+
+            wid_arr[i].style.backgroundColor = "blue";
+            wid_arr[i - 1].style.backgroundColor = "#fff";
+
+        }, 1000);
+    }
+
+
+
+    function run(){
+        ren_arr=[];
+        preOrderTraverse(root);
+        render();
+    }
+    function run1() {
+        ren_arr=[];
+        inOrderTraverse(root);
+        render();
+    }
+    function run2() {
+        width_visit(root);
+        render1();
+    }
+    function run2_search() {
+        wid_arr=[];
+        width_visit(root);
+        render_search();
+    }
+
+    pre.addEventListener('click',run,false);
+    _in.addEventListener('click',run1,false);
+    width.addEventListener('click',run2,false);
+    btn.addEventListener('click',run2_search,false);
+
+</script>

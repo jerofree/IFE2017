@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 07</title>
+    <style type="text/css">
+        #btn,.tree {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .node {
+            display: flex;
+            margin: 10px;
+            border-style:solid;
+            min-height: 50px;
+            min-width: 40px;
+            background-color: white;
+        }
+    #btn button{
+        margin-right: 20px;
+    }
+    </style>
+</head>
+<body>
+<div class="tree">
+    <div class="node" id="1">1
+        <div class="node" id="2">2
+            <div class="node" id="4">4
+                <div class="node" id="8">8</div>
+                <div class="node" id="9">9</div>
+            </div>
+            <div class="node" id="5">5
+                <div class="node" id="10">10</div>
+                <div class="node" id="11">11</div>
+            </div>
+        </div>
+        <div class="node" id="3">3
+            <div class="node" id="6">6
+                <div class="node" id="12">12</div>
+                <div class="node" id="13">13</div>
+            </div>
+            <div class="node" id="7">7
+                <div class="node" id="14">14</div>
+                <div class="node" id="15">15</div>
+            </div>
+         </div>
+        </div>
+    </div>
+
+<div id="btn">
+    <button id="pre">前序遍历</button>
+    <button id="in">中序遍历</button>
+    <button id="pos">后序遍历</button>
+</div>
+</body>
+<script>
+    var ren_arr=[];
+    var root=document.getElementById("1");
+    var pre=document.getElementById("pre");
+    var _in=document.getElementById("in");
+    var pos=document.getElementById("pos");
+
+    //先序遍历
+    function preOrderTraverse(node){
+        if(node !=null){
+            ren_arr.push(node);
+            preOrderTraverse(node.firstElementChild);
+            preOrderTraverse(node.lastElementChild);
+        }
+    }
+    //中序遍历
+    function inOrderTraverse(node){
+        if(node != null){
+            inOrderTraverse(node.firstElementChild);
+            ren_arr.push(node);
+            inOrderTraverse(node.lastElementChild);
+        }
+    }
+    //后序遍历
+    function postOrderTraverse(node){
+        if(node != null){
+            postOrderTraverse(node.firstElementChild);
+            postOrderTraverse(node.lastElementChild);
+            ren_arr.push(node);
+        }
+    }
+    function render() {
+        let timer=null;
+        let i=0;
+       ren_arr[0].style.backgroundColor="blue";
+        console.log(ren_arr.length);
+       timer=setInterval(function (){
+           if(ren_arr.length-1==i)
+           {
+               console.log("woshi"+i);
+               ren_arr[i].style.backgroundColor="#fff";
+               clearInterval(timer);
+               return;
+           }
+         i++;
+           console.log(i);
+
+           ren_arr[i].style.backgroundColor="blue";
+         ren_arr[i-1].style.backgroundColor="#fff";
+
+        },1000);
+
+
+    }
+    function run() {
+        ren_arr=[];
+        preOrderTraverse(root);
+        render();
+    }
+    function run1() {
+        ren_arr=[];
+        inOrderTraverse(root);
+        render();
+    }
+    function run2() {
+        ren_arr=[];
+        postOrderTraverse(root);
+        render();
+    }
+
+    pre.addEventListener('click',run,false);
+    _in.addEventListener('click',run1,false);
+    pos.addEventListener('click',run2,false);
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
