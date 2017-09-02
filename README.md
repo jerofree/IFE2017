@@ -25,7 +25,15 @@
 
 [任务五：基础JavaScript练习（二）](http://ife.baidu.com/course/detail/id/105) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%9B%9B%EF%BC%9A%E5%9F%BA%E7%A1%80JavaScript%E7%BB%83%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/index.html) | [Demo](http://116.196.66.72/IFE2017/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%BA%94%EF%BC%9A%E5%9F%BA%E7%A1%80JavaScript%E7%BB%83%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/index05.html)
 
-[任务四：基础JavaScript练习（一）](http://ife.baidu.com/course/detail/id/103) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%BA%94%EF%BC%9A%E5%9F%BA%E7%A1%80JavaScript%E7%BB%83%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/index05.html) | [Demo](http://116.196.66.72/IFE2017/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%9B%9B%EF%BC%9A%E5%9F%BA%E7%A1%80JavaScript%E7%BB%83%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/)
+[任务六：基础JavaScript练习（三）](http://ife.baidu.com/course/detail/id/107) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%85%AD%EF%BC%9A%E5%9F%BA%E7%A1%80JavaScript%E7%BB%83%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89/index06.html) | [Demo](http://116.196.66.72/IFE2017/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%85%AD%EF%BC%9A%E5%9F%BA%E7%A1%80JavaScript%E7%BB%83%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89/index06.html)
+
+[任务七：JavaScript和树（一）](http://ife.baidu.com/course/detail/id/108) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%83%EF%BC%9AJavaScript%E5%92%8C%E6%A0%91%EF%BC%88%E4%B8%80%EF%BC%89/index07.html) | [Demo](http://116.196.66.72/IFE2017/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%83%EF%BC%9AJavaScript%E5%92%8C%E6%A0%91%EF%BC%88%E4%B8%80%EF%BC%89/index07.html)
+
+[任务八：JavaScript和树（二）](http://ife.baidu.com/course/detail/id/110) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%85%AB%EF%BC%9AJavaScript%E5%92%8C%E6%A0%91%EF%BC%88%E4%BA%8C%EF%BC%89/index08.html) | [Demo](http://116.196.66.72/IFE2017/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%85%AB%EF%BC%9AJavaScript%E5%92%8C%E6%A0%91%EF%BC%88%E4%BA%8C%EF%BC%89/index08.html)
+
+[任务九：JavaScript和树（三）](http://ife.baidu.com/course/detail/id/111) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B9%9D%EF%BC%9AJavaScript%E5%92%8C%E6%A0%91%EF%BC%88%E4%B8%89%EF%BC%89/index09.html) | [Demo](http://116.196.66.72/IFE2017/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B9%9D%EF%BC%9AJavaScript%E5%92%8C%E6%A0%91%EF%BC%88%E4%B8%89%EF%BC%89/index09.html)
+
+
 
 
 
