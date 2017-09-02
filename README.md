@@ -41,6 +41,11 @@
 [任务三：表单（三）联动](http://ife.baidu.com/course/detail/id/106) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%89%EF%BC%9A%E8%A1%A8%E5%8D%95%EF%BC%88%E4%B8%89%EF%BC%89%E8%81%94%E5%8A%A8/dyform03.html) | [Demo](http://116.196.66.72/IFE2017/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%89%EF%BC%9A%E8%A1%A8%E5%8D%95%EF%BC%88%E4%B8%89%EF%BC%89%E8%81%94%E5%8A%A8/dyform03.html)
 
 [任务四：听指令的小方块（一）](http://ife.baidu.com/course/detail/id/109) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%9B%9B%EF%BC%9A%E5%90%AC%E6%8C%87%E4%BB%A4%E7%9A%84%E5%B0%8F%E6%96%B9%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89/instruction_block.html) | [Demo](http://116.196.66.72/IFE2017/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%9B%9B%EF%BC%9A%E5%90%AC%E6%8C%87%E4%BB%A4%E7%9A%84%E5%B0%8F%E6%96%B9%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89/instruction_block.html)
+### 动态数据绑定
+[动态数据绑定（一）](http://ife.baidu.com/course/detail/id/15) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E5%8A%A8%E6%80%81%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A/%E5%8A%A8%E6%80%81%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%EF%BC%88%E4%B8%80%EF%BC%89/dynamic01.html) | [Demo](http://116.196.66.72/IFE2017/%E5%8A%A8%E6%80%81%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A/%E5%8A%A8%E6%80%81%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%EF%BC%88%E4%B8%80%EF%BC%89/dynamic01.html)
+
+动态数据绑定（二）](http://ife.baidu.com/course/detail/id/20) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E5%8A%A8%E6%80%81%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A/%E5%8A%A8%E6%80%81%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%EF%BC%88%E4%BA%8C%EF%BC%89/dynamic02.html) | [Demo](http://116.196.66.72/IFE2017/%E5%8A%A8%E6%80%81%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A/%E5%8A%A8%E6%80%81%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%EF%BC%88%E4%BA%8C%EF%BC%89/dynamic02.html)
+
 
 
 
