@@ -17,6 +17,9 @@
 ### 斌斌学院
 [任务一：零基础JavaScript编码（一）](http://ife.baidu.com/course/detail/id/93) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%80%EF%BC%9A%E9%9B%B6%E5%9F%BA%E7%A1%80JavaScript%E7%BC%96%E7%A0%81%EF%BC%88%E4%B8%80\)/index.html) | [Demo](http://116.196.66.72/IFE2017/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%80%EF%BC%9A%E9%9B%B6%E5%9F%BA%E7%A1%80JavaScript%E7%BC%96%E7%A0%81%EF%BC%88%E4%B8%80/)
 
+[任务二：零基础JavaScript编码（二）](http://ife.baidu.com/course/detail/id/91) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%BA%8C%EF%BC%9A%E9%9B%B6%E5%9F%BA%E7%A1%80JavaScript%E7%BC%96%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/index.html) | [Demo](http://116.196.66.72/IFE2017/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%BA%8C%EF%BC%9A%E9%9B%B6%E5%9F%BA%E7%A1%80JavaScript%E7%BC%96%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/)
+
+
 
 
 
