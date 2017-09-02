@@ -33,6 +33,15 @@
 
 [任务九：JavaScript和树（三）](http://ife.baidu.com/course/detail/id/111) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B9%9D%EF%BC%9AJavaScript%E5%92%8C%E6%A0%91%EF%BC%88%E4%B8%89%EF%BC%89/index09.html) | [Demo](http://116.196.66.72/IFE2017/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B9%9D%EF%BC%9AJavaScript%E5%92%8C%E6%A0%91%EF%BC%88%E4%B8%89%EF%BC%89/index09.html)
 
+### 耀耀学院
+[任务一：表单（一）单个表单项的检验](http://ife.baidu.com/course/detail/id/97) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%80%EF%BC%9A%E8%A1%A8%E5%8D%95%EF%BC%88%E4%B8%80%EF%BC%89%E5%8D%95%E4%B8%AA%E8%A1%A8%E5%8D%95%E9%A1%B9%E7%9A%84%E6%A3%80%E9%AA%8C/checkform.html) | [Demo](http://116.196.66.72/IFE2017/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%80%EF%BC%9A%E8%A1%A8%E5%8D%95%EF%BC%88%E4%B8%80%EF%BC%89%E5%8D%95%E4%B8%AA%E8%A1%A8%E5%8D%95%E9%A1%B9%E7%9A%84%E6%A3%80%E9%AA%8C/checkform.html)
+
+[任务二：表单（二）多个表单项的动态校验](http://ife.baidu.com/course/detail/id/101) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%BA%8C%EF%BC%9A%E8%A1%A8%E5%8D%95%EF%BC%88%E4%BA%8C%EF%BC%89%E5%A4%9A%E4%B8%AA%E8%A1%A8%E5%8D%95%E9%A1%B9%E7%9A%84%E5%8A%A8%E6%80%81%E6%A0%A1%E9%AA%8C/dycheck.html) | [Demo](http://116.196.66.72/IFE2017/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%BA%8C%EF%BC%9A%E8%A1%A8%E5%8D%95%EF%BC%88%E4%BA%8C%EF%BC%89%E5%A4%9A%E4%B8%AA%E8%A1%A8%E5%8D%95%E9%A1%B9%E7%9A%84%E5%8A%A8%E6%80%81%E6%A0%A1%E9%AA%8C/dycheck.html)
+
+[任务三：表单（三）联动](http://ife.baidu.com/course/detail/id/106) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%89%EF%BC%9A%E8%A1%A8%E5%8D%95%EF%BC%88%E4%B8%89%EF%BC%89%E8%81%94%E5%8A%A8/dyform03.html) | [Demo](http://116.196.66.72/IFE2017/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%89%EF%BC%9A%E8%A1%A8%E5%8D%95%EF%BC%88%E4%B8%89%EF%BC%89%E8%81%94%E5%8A%A8/dyform03.html)
+
+[任务四：听指令的小方块（一）](http://ife.baidu.com/course/detail/id/109) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%9B%9B%EF%BC%9A%E5%90%AC%E6%8C%87%E4%BB%A4%E7%9A%84%E5%B0%8F%E6%96%B9%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89/instruction_block.html) | [Demo](http://116.196.66.72/IFE2017/%E8%80%80%E8%80%80%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%9B%9B%EF%BC%9A%E5%90%AC%E6%8C%87%E4%BB%A4%E7%9A%84%E5%B0%8F%E6%96%B9%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89/instruction_block.html)
+
 
 
 
