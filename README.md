@@ -21,6 +21,9 @@
 
 [任务三：零基础JavaScript编码（三）](http://ife.baidu.com/course/detail/id/98) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%89%EF%BC%9A%E9%9B%B6%E5%9F%BA%E7%A1%80JavaScript%E7%BC%96%E7%A0%81%EF%BC%88%E4%B8%89%EF%BC%89/index.html) | [Demo](http://116.196.66.72/IFE2017/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E4%B8%89%EF%BC%9A%E9%9B%B6%E5%9F%BA%E7%A1%80JavaScript%E7%BC%96%E7%A0%81%EF%BC%88%E4%B8%89%EF%BC%89/)
 
+[任务四：基础JavaScript练习（一）](http://ife.baidu.com/course/detail/id/103) | [代码](https://github.com/jerofree/IFE2017/blob/master/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%9B%9B%EF%BC%9A%E5%9F%BA%E7%A1%80JavaScript%E7%BB%83%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/index.html) | [Demo](http://116.196.66.72/IFE2017/%E6%96%8C%E6%96%8C%E5%AD%A6%E9%99%A2/%E4%BB%BB%E5%8A%A1%E5%9B%9B%EF%BC%9A%E5%9F%BA%E7%A1%80JavaScript%E7%BB%83%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/)
+
+
 
 
 
